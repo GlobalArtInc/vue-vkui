@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VaInput.vue renders correctly 1`] = `
+<div
+  class="va-input-con va-show-icon inline"
+  style="width: 100%;"
+>
+  <!---->
+   
+  <input
+    class="va-form-control va-form-control-primary"
+    placeholder=""
+    style="width: 100%;"
+    tabindex="0"
+    type="text"
+  />
+   
+  <!---->
+   
+  <!---->
+   
+  <!---->
+   
+  <!---->
+</div>
+`;

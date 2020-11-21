@@ -1,0 +1,15 @@
+.InfoRow {
+  user-select: text;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.InfoRow__header {
+  margin-bottom: 2px;
+  color: var(--text_secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
