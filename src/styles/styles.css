@@ -127,6 +127,7 @@ div#root {
 
 body {
     overflow-x: hidden;
+    overflow-y: scroll;
     background: var(--background_page);
 }
 

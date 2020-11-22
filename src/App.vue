@@ -1,15 +1,7 @@
 <template>
   <Root>
-    <PanelHeader>
-      <template v-slot:left>
-        asd
-      </template>
-      {{ VKTheme }}
-      <template v-slot:right>
-        asd
-      </template>
-    </PanelHeader>
-    <Spinner size="large" />
+    <PanelHeader />
+    <Spinner size="large" v-if="isLoading === true" />
   </Root>
 </template>
 
@@ -17,11 +9,13 @@
 export default {
   name: 'App',
   data () {
-    return {}
+    return {
+      isLoading: true
+    }
   },
   created () {
     setTimeout(() => {
-      this.isLoading = true
+      // this.isLoading = false
     }, 500)
   }
 }

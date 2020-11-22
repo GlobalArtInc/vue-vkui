@@ -105,7 +105,7 @@
   padding-left: 0;
 }
 
-.PanelHeader--ios .PanelHeader__content {
+.PanelHeader--ios .PanelHeader__content, .PanelHeader--android .PanelHeader__content {
   font-size: 21px;
   line-height: var(--panelheader_height_ios);
   text-align: center;
@@ -176,13 +176,6 @@
 
 .PanelHeader--android .PanelHeader__left:not(:empty) {
   padding: 4px 0 4px 4px;
-}
-
-.PanelHeader--android .PanelHeader__content {
-  font-size: 23px;
-  align-items: center;
-  flex-grow: 1;
-  max-width: 100%;
 }
 
 .PanelHeader--android .PanelHeader__content > * {

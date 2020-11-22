@@ -9,12 +9,13 @@ import VK from './index'
  */
 
 Vue.use(VK, {
-  theme: 'bright_light'
+  theme: 'bright_light',
+  platform: 'ios'
 })
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/', component: App }
+  { path: '/', component: App, meta: { title: 'VK UI' } }
 ]
 
 const router = new VueRouter({
