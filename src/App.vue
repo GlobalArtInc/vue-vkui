@@ -1,7 +1,13 @@
 <template>
   <Root>
     <PanelHeader>
-      sd
+      <template v-slot:left>
+        asd
+      </template>
+      {{ VKTheme }}
+      <template v-slot:right>
+        asd
+      </template>
     </PanelHeader>
     <Spinner size="large" />
   </Root>

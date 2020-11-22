@@ -21,23 +21,11 @@
   height: 100%;
   content: '';
   display: block;
-  border: 1px solid var(--image_border);
+  border: var(--thin-border) solid var(--image_border);
   z-index: 3;
   box-sizing: border-box;
   border-radius: inherit;
   pointer-events: none;
-}
-
-@media (min-resolution: 2dppx) {
-  .Banner__in::before {
-    border-width: .5px;
-  }
-}
-
-@media (min-resolution: 3dppx) {
-  .Banner__in::before {
-    border-width: .33px;
-  }
 }
 
 .Banner__before {
@@ -258,18 +246,22 @@
  * Android
  */
 
-.Banner--android {
+.Banner--android,
+.Banner--vkcom {
   padding: 0 16px;
 }
 
-.Banner--android .Banner__in {
+.Banner--android .Banner__in,
+.Banner--vkcom .Banner__in {
   border-radius: 8px;
 }
 
-.Banner--android .Banner__dismissIcon {
+.Banner--android .Banner__dismissIcon,
+.Banner--vkcom .Banner__dismissIcon {
   color: var(--icon_secondary);
 }
 
-.Banner--android.Banner--md-image .Banner__dismissIcon {
+.Banner--android.Banner--md-image .Banner__dismissIcon,
+.Banner--vkcom.Banner--md-image .Banner__dismissIcon {
   color: var(--white);
 }

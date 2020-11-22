@@ -83,7 +83,7 @@ import FixedLayout from './FixedLayout/FixedLayout'
 import Spinner from './Spinner/Spinner'
 import Separator from './Separator/Separator'
 
-const Index = {
+const Components = {
   Root,
   PanelHeader,
   FixedLayout,
@@ -91,16 +91,19 @@ const Index = {
   Separator
 }
 
-const install = function (Vue, locale) {
-  for (const i in Index) {
-    Vue.component(i, Index[i])
+const install = function (Vue, options) {
+  for (const i in Components) {
+    Vue.component(i, Components[i])
   }
+  Vue.prototype.VKTheme = options.theme || 'bright_light'
+  window.VKTheme = options.theme || 'bright_light'
+  document.body.setAttribute('scheme', window.VKTheme)
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
 
-Index.install = install
+Components.install = install
 
-export default Index
+export default Components

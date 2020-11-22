@@ -4,8 +4,12 @@ import App from './App.vue'
 
 import VK from './index'
 
+/*
+  themes: bright_light, space_gray
+ */
+
 Vue.use(VK, {
-  theme: 'sd'
+  theme: 'bright_light'
 })
 Vue.use(VueRouter)
 
