@@ -1,10 +1,9 @@
 <template>
   <Root>
     <PanelHeader>
-      <FixedLayout>
-        <PanelHeader :side="true" />
-      </FixedLayout>
+      sd
     </PanelHeader>
+    <Spinner size="large" />
   </Root>
 </template>
 

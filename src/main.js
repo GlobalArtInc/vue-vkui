@@ -4,7 +4,9 @@ import App from './App.vue'
 
 import VK from './index'
 
-Vue.use(VK)
+Vue.use(VK, {
+  theme: 'sd'
+})
 Vue.use(VueRouter)
 
 const routes = [

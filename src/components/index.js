@@ -80,11 +80,15 @@
 import Root from './Root/Root.vue'
 import PanelHeader from './PanelHeader/PanelHeader'
 import FixedLayout from './FixedLayout/FixedLayout'
+import Spinner from './Spinner/Spinner'
+import Separator from './Separator/Separator'
 
 const Index = {
   Root,
   PanelHeader,
-  FixedLayout
+  FixedLayout,
+  Spinner,
+  Separator
 }
 
 const install = function (Vue, locale) {

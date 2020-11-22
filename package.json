@@ -1,4 +1,4 @@
-  {
+{
   "name": "@globalart/vue-vkui",
   "version": "1.0.1",
   "description": "A vkui library of Vue components",
@@ -48,6 +48,7 @@
     "node-sass": "^4.9.0",
     "sass-loader": "^8.0.0",
     "vue-router": "^3.0.2",
+    "vue-svg-loader": "^0.16.0",
     "vue-template-compiler": "^2.6.6"
   },
   "postcss": {

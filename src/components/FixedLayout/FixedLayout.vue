@@ -1,7 +1,7 @@
 <template>
   <div class="FixedLayout FixedLayout--android FixedLayout--top PanelHeader__fixed PanelHeader__fixed--shadow">
     <div class="FixedLayout__in">
-      <slot />
+      <slot/>
     </div>
   </div>
 </template>
@@ -11,6 +11,7 @@
   width: 100%;
   top: 0;
 }
+
 .FixedLayout {
   position: fixed;
   box-sizing: border-box;
@@ -19,6 +20,7 @@
   padding-left: 0;
   padding-right: 0;
 }
+
 .FixedLayout, .FixedLayout__in {
   height: 56px;
 }

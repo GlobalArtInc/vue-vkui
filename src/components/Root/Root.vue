@@ -1,5 +1,5 @@
 <template>
-  <div :class="`PopoutRoot SplitLayout bright_${theme}`">
+  <div :class="`PopoutRoot SplitLayout`">
     <slot />
   </div>
 </template>
