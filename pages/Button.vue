@@ -32,17 +32,17 @@
     </VkDiv>
     <VkDiv style="background: rgb(35, 35, 35);">
       <VkButton mode="overlay_primary">
-        Overlay_primary
+        Overlay Primary
       </VkButton>
     </VkDiv>
     <VkDiv style="background: rgb(35, 35, 35);">
       <VkButton mode="overlay_secondary">
-        Overlay_secondary
+        Overlay Secondary
       </VkButton>
     </VkDiv>
     <VkDiv style="background: rgb(35, 35, 35);">
       <VkButton mode="overlay_outline">
-        Overlay_outline
+        Overlay Outline
       </VkButton>
     </VkDiv>
   </div>

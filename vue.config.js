@@ -11,6 +11,9 @@ module.exports = {
       .use('vue-svg-loader')
       .loader('vue-svg-loader')
   },
+  devServer: {
+    public: 'pc1.globalag.ru'
+  },
   configureWebpack: {
     externals: (process.env.NODE_ENV === 'production') ? {
       moment: 'moment',
