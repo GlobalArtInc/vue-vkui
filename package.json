@@ -1,6 +1,6 @@
 {
   "name": "@globalart/vue-vkui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A vkui library of Vue components",
   "license": "MIT",
   "main": "dist/vue-vkui.common.js",
