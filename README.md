@@ -1,5 +1,5 @@
 # VueJS VKUI
-***This UI is currently under development, documentation will be later***
+***Сейчас UI находится в разработке, нужно перенести большинство основных компонентов из React-версии, в VueJS-версию***
 
 ![](https://img.shields.io/npm/v/@globalart/vue-vkui.svg?colorA=57D9A3&colorB=666666)
 
