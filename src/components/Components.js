@@ -5,12 +5,16 @@ import VkSubhead from '../components/Typography/Subhead/Subhead'
 import VkCaption from '../components/Typography/Caption/Caption'
 import VkText from '../components/Typography/Text/Text'
 
+/* Service */
+import VkTappable from '../components/Tappable/Tappable'
+
 /* Layout */
 import VkRoot from './Root/Root.vue'
 import VkPopoutRoot from './PopoutRoot/PopoutRoot'
 import VkPanelHeader from './PanelHeader/PanelHeader'
 import VkFixedLayout from './FixedLayout/FixedLayout'
 import VkSplitLayout from './SplitLayout/SplitLayout'
+import VkSplitCol from './SplitCol/SplitCol'
 /* Layout */
 
 // Blocks
@@ -59,12 +63,15 @@ const Components = {
   VkSubhead,
   VkCaption,
   VkText,
+  /* Service */
+  VkTappable,
   /* Layout */
   VkRoot,
   VkPopoutRoot,
   VkPanelHeader,
   VkFixedLayout,
   VkSplitLayout,
+  VkSplitCol,
   /* Layout */
   /* Blocks */
   VkButton,
