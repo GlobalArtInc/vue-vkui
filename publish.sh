@@ -20,6 +20,7 @@ cp README.md ~/vue-vkui-npm
 
 # remove the example component
 rm ~/vue-vkui-npm/src/App.vue
+rm -rf ~/vue-vkui-npm/src/pages
 
 # remove the generated demo.html
 rm ~/vue-vkui-npm/dist/demo.html

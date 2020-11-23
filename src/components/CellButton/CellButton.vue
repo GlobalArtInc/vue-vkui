@@ -1,9 +1,12 @@
 <template>
   <VkSimpleCell :getClass="['CellButton', 'CellButton--' + VkPlatform,
    'CellButton--' + mode,
-   centered === true ? 'CellButton--centered' : ''
+   centered === true ? 'CellButton--centered' : '',
+   'CellButton--aln-left'
    ]">
-    asd
+    <div class="CellButton__in">
+      <div class="CellButton__content"><slot /></div>
+    </div>
   </VkSimpleCell>
 </template>
 
