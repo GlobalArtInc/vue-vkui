@@ -1,6 +1,6 @@
 <template>
   <div :class="classes">
-    <FixedLayout v-if="fixed === true">
+    <VkFixedLayout v-if="fixed === true">
       <div class="PanelHeader__in">
         <div class="PanelHeader__left">
           <slot name="left"></slot>
@@ -12,8 +12,8 @@
           <slot name="right"></slot>
         </div>
       </div>
-    </FixedLayout>
-    <Separator v-if="separator === true" className="PanelHeader__separator"/>
+    </VkFixedLayout>
+    <VkSeparator v-if="separator === true" className="PanelHeader__separator"/>
   </div>
 </template>
 

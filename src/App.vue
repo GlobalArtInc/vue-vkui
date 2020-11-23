@@ -1,8 +1,13 @@
 <template>
-  <Root>
-    <PanelHeader />
-    <Spinner size="large" v-if="isLoading === true" />
-  </Root>
+  <VkRoot>
+    <VkPanelHeader/>
+    <VkDiv>
+      <VkInfoRow header="sss">
+        <VkProgress :value="10"/>
+      </VkInfoRow>
+      <VkSpinner size="large" v-if="isLoading === true"/>
+    </VkDiv>
+  </VkRoot>
 </template>
 
 <script>

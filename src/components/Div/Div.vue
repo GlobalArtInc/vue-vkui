@@ -10,7 +10,7 @@ export default {
     classes: []
   }),
   created () {
-    this.classes.push('Div--' + this.VkPlatform).join(' ')
+    this.classes.push('Div--' + this.VkPlatform)
   }
 }
 </script>

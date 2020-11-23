@@ -1,6 +1,6 @@
 {
   "name": "@globalart/vue-vkui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A vkui library of Vue components",
   "license": "MIT",
   "main": "dist/vue-vkui.common.js",
@@ -85,10 +85,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GlobalArtLimited/vue-atlaskit.git"
+    "url": "git+https://github.com/GlobalArtLimited/vue-vkui.git"
   },
   "bugs": {
-    "url": "https://github.com/GlobalArtLimited/vue-atlaskit/issues"
+    "url": "https://github.com/GlobalArtLimited/vue-vkui/issues"
   },
-  "homepage": "https://github.com/GlobalArtLimited/vue-atlaskit#readme"
+  "homepage": "https://github.com/GlobalArtLimited/vue-vkui#readme",
+  "directories": {
+    "test": "tests"
+  }
 }
