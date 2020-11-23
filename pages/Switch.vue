@@ -1,19 +1,19 @@
 <template>
   <div>
     <VkCell>
-      Переключатель
+      Switch
       <template #after>
         <VkSwitch />
       </template>
     </VkCell>
     <VkCell>
-      Активный
+      Checked
       <template #after>
         <VkSwitch checked />
       </template>
     </VkCell>
     <VkCell>
-      Отключенный
+      Disabled
       <template #after>
         <VkSwitch disabled />
       </template>
