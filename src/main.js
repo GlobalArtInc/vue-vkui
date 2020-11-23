@@ -15,8 +15,15 @@ Vue.use(VK, {
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/', component: () => import('../pages/Home'), meta: { title: 'VK UI' } },
-  { path: '/button', component: () => import('../pages/Button'), meta: { title: 'VK UI' } }
+  { path: '/', component: () => import('../pages/Home'), meta: { title: 'Home' } },
+  {
+    path: '/blocks',
+    component: () => import('../pages/Layout'),
+    children: [
+      { path: 'button', component: () => import('../pages/Button'), meta: { title: 'Buttons' } },
+      { path: 'switch', component: () => import('../pages/Switch'), meta: { title: 'Switch' } }
+    ]
+  }
 ]
 
 const router = new VueRouter({

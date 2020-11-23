@@ -1,27 +1,27 @@
 <template>
   <div>
     <VkDiv>
-      <VkButton :style="[{marginRight: '8px'}]">
+      <VkButton>
         Primary
       </VkButton>
     </VkDiv>
     <VkDiv>
-      <VkButton mode="secondary" :style="[{marginRight: '8px'}]">
+      <VkButton mode="secondary">
         Secondary
       </VkButton>
     </VkDiv>
     <VkDiv>
-      <VkButton mode="tertiary" :style="[{marginRight: '8px'}]">
+      <VkButton mode="tertiary">
         Tertiary
       </VkButton>
     </VkDiv>
     <VkDiv>
-      <VkButton mode="outline" :style="[{marginRight: '8px'}]">
+      <VkButton mode="outline">
         Outline
       </VkButton>
     </VkDiv>
     <VkDiv>
-      <VkButton mode="commerce" :style="[{marginRight: '8px'}]">
+      <VkButton mode="commerce">
         Commerce
       </VkButton>
     </VkDiv>

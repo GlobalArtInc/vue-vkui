@@ -6,6 +6,9 @@
       </div>
       <div v-if="description" class="SimpleCell__description">{{ description }}</div>
     </div>
+    <div class="SimpleCell__after">
+      <slot name="after"/>
+    </div>
   </Tappable>
 </template>
 
