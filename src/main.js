@@ -18,11 +18,12 @@ const routes = [
   { path: '/', component: () => import('../pages/Home'), meta: { title: 'Home' } },
   {
     path: '/blocks',
-    component: () => import('../pages/Layout'),
+    component: () => import('../pages/Blocks'),
     children: [
       { path: 'button', component: () => import('../pages/Blocks/Button'), meta: { title: 'Buttons' } },
       { path: 'switch', component: () => import('../pages/Blocks/Switch'), meta: { title: 'Switch' } },
-      { path: 'tabs', component: () => import('../pages/Blocks/Tabs'), meta: { title: 'Tabs' } }
+      { path: 'tabs', component: () => import('../pages/Blocks/Tabs'), meta: { title: 'Tabs' } },
+      { path: '*', meta: { title: 'Blocks' } }
     ]
   },
   {

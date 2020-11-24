@@ -57,7 +57,8 @@ import VkBanner from './Banner/Banner'
 import VkMiniInfoCell from './MiniInfoCell/MiniInfoCell'
 import VkWriteBar from './WriteBar/WriteBar'
 import VkWriteBarIcon from './WriteBarIcon/WriteBarIcon'
-// Blocks
+/* Forms */
+import VkSelect from './Select/VkSelect'
 
 const Components = {
   /* Typography */
@@ -112,8 +113,9 @@ const Components = {
   VkBanner,
   VkMiniInfoCell,
   VkWriteBar,
-  VkWriteBarIcon
-  /* Blocks */
+  VkWriteBarIcon,
+  /* Forms */
+  VkSelect
 }
 
 const install = function (Vue, options) {
