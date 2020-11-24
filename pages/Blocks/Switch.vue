@@ -3,13 +3,13 @@
     <VkCell>
       Switch
       <template #after>
-        <VkSwitch />
+        <VkSwitch v-model="switch1" />
       </template>
     </VkCell>
     <VkCell>
       Checked
       <template #after>
-        <VkSwitch checked />
+        <VkSwitch v-model="switch2"/>
       </template>
     </VkCell>
     <VkCell>
@@ -20,3 +20,13 @@
     </VkCell>
   </div>
 </template>
+
+<script>
+export default {
+  data: () => ({
+    switch1: false,
+    switch2: true,
+    switch3: false
+  })
+}
+</script>

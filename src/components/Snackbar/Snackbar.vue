@@ -1,5 +1,5 @@
 <template>
   <div>
-    VK UI
+    asdw
   </div>
 </template>

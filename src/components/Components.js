@@ -17,6 +17,9 @@ import VkSplitLayout from './SplitLayout/SplitLayout'
 import VkSplitCol from './SplitCol/SplitCol'
 /* Layout */
 
+/* Popouts */
+import VkSnackbar from './Snackbar/Snackbar'
+
 // Blocks
 import VkButton from './Button/Button'
 import VkIconButton from './IconButton/IconButton'
@@ -119,6 +122,7 @@ const install = function (Vue, options) {
   for (const i in Components) {
     Vue.component(i, Components[i])
   }
+  Vue.prototype.VkSnack = VkSnackbar
   Vue.prototype.VkPlatform = platform
   window.VkPlatform = platform
   document.body.setAttribute('scheme', theme)

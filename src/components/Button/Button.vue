@@ -1,14 +1,14 @@
 <template>
-  <VkTappable :getClass="[
+    <VkTappable @click="onClick" :getClass="[
    'Button',
    'Button--' + VkPlatform,
    'Button--aln-center',
    'Button--sz-' + size,
    'Button--lvl-' + mode]">
     <div class="Button__in">
-      <div className="Button__before"><slot name="before" /></div>
+      <div class="Button__before"><slot name="before" /></div>
       <div class="Button__content"><slot /></div>
-      <div className="Button__after"><slot name="after" /></div>
+      <div class="Button__after"><slot name="after" /></div>
     </div>
   </VkTappable>
 </template>
@@ -35,6 +35,11 @@ export default {
     stopPropagation: {
       type: Boolean,
       default: true
+    }
+  },
+  methods: {
+    onClick () {
+      this.$emit('click', event)
     }
   }
 }

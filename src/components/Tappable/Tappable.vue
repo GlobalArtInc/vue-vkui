@@ -23,6 +23,7 @@ export default {
   },
   methods: {
     onClick () {
+      this.$emit('click', event)
       this.active = true
       let timeout = setTimeout(() => {
         this.active = false

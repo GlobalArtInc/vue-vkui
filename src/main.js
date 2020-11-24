@@ -20,8 +20,16 @@ const routes = [
     path: '/blocks',
     component: () => import('../pages/Layout'),
     children: [
-      { path: 'button', component: () => import('../pages/Button'), meta: { title: 'Buttons' } },
-      { path: 'switch', component: () => import('../pages/Switch'), meta: { title: 'Switch' } }
+      { path: 'button', component: () => import('../pages/Blocks/Button'), meta: { title: 'Buttons' } },
+      { path: 'switch', component: () => import('../pages/Blocks/Switch'), meta: { title: 'Switch' } },
+      { path: 'tabs', component: () => import('../pages/Blocks/Tabs'), meta: { title: 'Tabs' } }
+    ]
+  },
+  {
+    path: '/popouts',
+    component: () => import('../pages/Layout'),
+    children: [
+      { path: 'snackbar', component: () => import('../pages/Popouts/Snackbar'), meta: { title: 'Snackbar' } }
     ]
   }
 ]
