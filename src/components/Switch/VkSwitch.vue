@@ -1,6 +1,6 @@
 <template>
   <label :class="['Switch', 'Switch--' + VkPlatform]">
-    <input type="checkbox" @input="handleInput" :disabled="disabled" @click="onClick" class="Switch__self"/>
+    <input type="checkbox" v-model="data" @input="handleInput" :disabled="disabled" @click="onClick" class="Switch__self"/>
     <span class="Switch__pseudo"/>
   </label>
 </template>
