@@ -1,6 +1,6 @@
 <template>
-  <div :class="classes">
-    <div className="Counter__in">
+  <div :class="['Counter', 'Counter--' + VkPlatform, 'Counter--' + mode, 'Counter--s-' + size]">
+    <div class="Counter__in">
       <slot />
     </div>
   </div>
@@ -15,14 +15,6 @@ export default {
     size: {
       default: 'm'
     }
-  },
-  data: () => ({
-    classes: ['Counter']
-  }),
-  created () {
-    this.classes.push('Counter--' + this.VkPlatform)
-    this.classes.push('Counter--' + this.mode)
-    this.classes.push('Counter--s-' + this.size)
   }
 }
 </script>

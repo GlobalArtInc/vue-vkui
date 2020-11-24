@@ -13,7 +13,7 @@
         </div>
       </div>
     </VkFixedLayout>
-    <VkSeparator v-if="separator === true" className="PanelHeader__separator"/>
+    <VkSeparator v-if="separator === true" class="PanelHeader__separator"/>
   </div>
 </template>
 

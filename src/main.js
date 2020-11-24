@@ -21,6 +21,9 @@ const routes = [
     component: () => import('../pages/Blocks'),
     children: [
       { path: 'button', component: () => import('../pages/Blocks/Button'), meta: { title: 'Buttons' } },
+      { path: 'group', component: () => import('../pages/Blocks/Group'), meta: { title: 'Group' } },
+      { path: 'counter', component: () => import('../pages/Blocks/Counter'), meta: { title: 'Counter' } },
+      { path: 'progress', component: () => import('../pages/Blocks/Progress'), meta: { title: 'Progress' } },
       { path: 'switch', component: () => import('../pages/Blocks/Switch'), meta: { title: 'Switch' } },
       { path: 'tabs', component: () => import('../pages/Blocks/Tabs'), meta: { title: 'Tabs' } },
       { path: '*', meta: { title: 'Blocks' } }
