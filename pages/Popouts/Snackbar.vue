@@ -12,7 +12,11 @@
 export default {
   methods: {
     onSnackbar () {
-      console.log(2)
+      this.snackbar.danger({
+        title: 'Danger',
+        message: 'Dev Snack',
+        duration: 3000
+      })
     }
   }
 }

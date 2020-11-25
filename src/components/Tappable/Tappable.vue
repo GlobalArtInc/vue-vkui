@@ -1,10 +1,11 @@
 <template>
   <div :class="[
-    'Tappable',
-    'Tappable--' + VkPlatform,
-    active === true ? 'Tappable--active' : 'Tappable--inactive', ...getClass]" @click="onClick">
+    classObj,
+    ...getClass]"
+       @mouseleave.prevent="onActive(false)"
+       @mousedown.prevent="active = true" @click="onClick">
     <slot />
-    <span class="Tappable__waves">
+    <span v-if="!getClass" class="Tappable__waves">
       <span class="Tappable__wave">
       </span>
     </span>
@@ -17,11 +18,22 @@ export default {
     active: false
   }),
   props: {
+    disabled: {
+      type: Boolean,
+      default: false
+    },
     getClass: {
       type: Array
     }
   },
   methods: {
+    onActive (state) {
+      if (state === false) {
+        setTimeout(() => {
+          this.active = false
+        }, 300)
+      }
+    },
     onClick () {
       this.$emit('click', event)
       this.active = true
@@ -31,8 +43,24 @@ export default {
       }, 750)
     }
   },
-  created () {
-    this.active = false
+  computed: {
+    classObj () {
+      let arr = Object
+        .keys(this.getClass)
+        .map(key => this.getClass[key])
+      if (this.disabled === false || arr[0] !== 'SimpleCell') {
+        const classes = {}
+        classes['Tappable'] = true
+        classes['Tappable--' + this.VkPlatform] = true
+        if (this.active === true) {
+          classes['Tappable--active'] = true
+        } else {
+          classes['Tappable--inactive'] = true
+        }
+        return classes
+      }
+      return {}
+    }
   }
 }
 </script>

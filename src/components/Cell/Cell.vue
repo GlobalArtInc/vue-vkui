@@ -1,5 +1,5 @@
 <template>
-  <div :class="['Cell', 'Cell--' + VkPlatform]">
+  <div :class="['Cell', 'Cell--' + VkPlatform, 'Cell--m']">
     <div class="Cell_in">
       <VkSimpleCell>
         <slot />
